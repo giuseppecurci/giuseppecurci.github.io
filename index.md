@@ -7,13 +7,25 @@ title: Home
   <div class="intro-copy">
     <h1>Giuseppe Curci</h1>
     <p>
-      I am an AI Researcher at <strong style="color: #d9378b;">Villanova AI</strong>, working on the development
-      of the fully open Villanova LLMs family (among the best in Europe), where I am primarily responsible for post-training.
-      <a href="https://huggingface.co/collections/VillanovaAI/villanova2"
-         target="_blank" rel="noopener noreferrer"
-         aria-label="Villanova AI Hugging Face collection">
-        <i class="fa-solid fa-face-smile"></i>
+      I am an AI Researcher at <strong style="color: #d9378b;">Villanova AI</strong>,
+      working on the development of the fully open
+      <a
+        href="https://huggingface.co/collections/VillanovaAI/villanova2"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Villanova LLMs Hugging Face collection"
+      >
+        <strong>Villanova LLMs</strong>
+        <img
+          src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+          alt="Hugging Face"
+          width="20"
+          height="20"
+          style="vertical-align: middle; margin-left: 4px;"
+        />
       </a>
+      family (among the best in Europe), where I am primarily responsible for post-training.
+
       Before that, I got my MS from the <strong>University of Trento</strong> 🇮🇹
       and conducted research under the supervision of Elisa Ricci.
     </p>
