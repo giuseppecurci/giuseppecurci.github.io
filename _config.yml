@@ -1,0 +1,8 @@
+title: Giuseppe Curci
+description: AI Engineer working at the intersection of research and industry.
+url: "https://giuseppecurci.github.io"
+baseurl: ""
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+exclude:
+  - README.md

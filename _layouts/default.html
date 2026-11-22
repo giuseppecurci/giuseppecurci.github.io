@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="{{ '/' | relative_url }}">Giuseppe Curci</a>
+    <nav aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle color theme">Theme</button>
+  </header>
+
+  <main>{{ content }}</main>
+
+  <footer>© {{ 'now' | date: '%Y' }} Giuseppe Curci</footer>
+
+  <script>
+    (() => {
+      const key = "gc-theme";
+      const root = document.documentElement;
+      const saved = localStorage.getItem(key);
+      if (saved === "light" || saved === "dark") root.dataset.theme = saved;
+
+      const button = document.querySelector(".theme-toggle");
+      button.addEventListener("click", () => {
+        const next = root.dataset.theme === "dark" ? "light" : "dark";
+        root.dataset.theme = next;
+        localStorage.setItem(key, next);
+      });
+    })();
+  </script>
+</body>
+</html>

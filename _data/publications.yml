@@ -1,0 +1,72 @@
+- title: "Exploring the Limits of the Delta Learning Hypothesis: Single-Pair Generator Biases in Direct Preference Optimization"
+  paper_url: "https://arxiv.org/abs/2610.37058"
+  image: "/assets/images/delta-learning.png"
+  image_alt: "Figure from the delta learning preprint"
+  image_width: 230
+  image_height: 105
+  authors:
+    - name: "Giuseppe Curci"
+      self: true
+    - name: "Stefano Simonazzi"
+    - name: "Andrea Molinari"
+    - name: "Andrea Zugarini"
+  venue: "arXiv preprint"
+  month: "Oct"
+  year: 2026
+  links:
+    - label: "Paper"
+      url: "https://arxiv.org/abs/2610.37058"
+      icon: "paper"
+  summary: "DPO usually relies on an external LLM judge to rank responses. A chepear alternative was proposed: just use two models and consider the response from the bigger model as the chosen. But there's a catch: models have distinctive fingerprints beyond response quality that introduce systematic biases, allowing the model to learn who generated an answer rather than why it is better, which inevitably degrades trainings gain. Increasing generator diversity substantially mitigates these shortcuts, even without an external judge. The takeaway: diverse generators may matter just as much as sophisticated preference-ranking strategies."
+
+- title: "Practical Guidelines for Model Merging in LLMs Pre-Training"
+  paper_url: "https://aclanthology.org/2026.acl-industry.105/"
+  image: "/assets/images/model-merging.png"
+  image_alt: "Figure from the model merging paper"
+  image_width: 230
+  image_height: 180
+  image_variant: "tall"
+  authors:
+    - name: "Giuseppe Curci"
+      self: true
+    - name: "Stefano Simonazzi"
+    - name: "Andrea Molinari"
+    - name: "Andrea Zugarini"
+  venue: "ACL"
+  month: "Jul"
+  year: 2026
+  links:
+    - label: "Paper"
+      url: "https://aclanthology.org/2026.acl-industry.105/"
+      icon: "paper"
+    - label: "Code"
+      url: "https://github.com/giuseppecurci/Merge-LLM-Pre-Training"
+      icon: "github"
+  summary: "We study checkpoint merging during LLM pre-training and find that simple averaging works best during stable learning-rate phases, with diminishing gains during decay as checkpoint diversity shrinks. We also show that merging results reliably predict the improvements achievable through short learning-rate decay phases."
+
+- title: "Ensembling Pruned Attention Heads For Uncertainty-Aware Efficient Transformers"
+  paper_url: "https://proceedings.iclr.cc/paper_files/paper/2026/hash/28236482f64a72eec43706b6f3a6c511-Abstract-Conference.html"
+  image: "/assets/images/hydra-ensembles.png"
+  image_alt: "Figure from the Hydra Ensembles paper"
+  image_width: 230
+  image_height: 180
+  image_variant: "tall"
+  authors:
+    - name: "Firas Gabetni*"
+    - name: "Giuseppe Curci*"
+      self: true
+    - name: "Andrea Pilzer"
+    - name: "Subhankar Roy"
+    - name: "Elisa Ricci"
+    - name: "Gianni Franchi"
+  venue: "ICLR"
+  month: "Apr"
+  year: 2026
+  links:
+    - label: "Paper"
+      url: "https://proceedings.iclr.cc/paper_files/paper/2026/hash/28236482f64a72eec43706b6f3a6c511-Abstract-Conference.html"
+      icon: "paper"
+    - label: "Code"
+      url: "https://github.com/fira7s/HydraEnsembles"
+      icon: "github"
+  summary: "Deep Ensembles achieve strong uncertainty quantification but are costly to scale to large models. Hydra Ensembles prunes attention heads to create diverse members (head sets) and fuses them in one single MHA block, leveraging grouped fully connected layers to yield near single model inference speed while matching or surpassing Deep Ensembles without retraining from scratch."
